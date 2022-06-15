@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+
 import { useRouter } from 'next/router';
 import { links, icons } from './data';
 
@@ -14,20 +13,20 @@ const Navbar = () => {
 	const [linkColor, setLinkColor] = useState('#1f2937');
 	const router = useRouter();
 
-	useEffect(() => {
-		if (
-			router.asPath === '/property' ||
-			router.asPath === '/crypto' ||
-			router.asPath === '/netflix' ||
-			router.asPath === '/twitch'
-		) {
-			setNavBg('transparent');
-			setLinkColor('#ecf0f3');
-		} else {
-			setNavBg('#ecf0f3');
-			setLinkColor('#1f2937');
-		}
-	}, [router]);
+	// useEffect(() => {
+	// 	if (
+	// 		router.asPath === '/property' ||
+	// 		router.asPath === '/crypto' ||
+	// 		router.asPath === '/netflix' ||
+	// 		router.asPath === '/twitch'
+	// 	) {
+	// 		setNavBg('transparent');
+	// 		setLinkColor('#ecf0f3');
+	// 	} else {
+	// 		setNavBg('#ecf0f3');
+	// 		setLinkColor('#1f2937');
+	// 	}
+	// }, [router]);
 
 	const handleNav = () => {
 		setNav(!nav);
@@ -37,14 +36,18 @@ const Navbar = () => {
 		const handleShadow = () => {
 			if (window.scrollY >= 90) {
 				setShadow(true);
+				setNavBg('#ecf1f3');
+				setLinkColor(true);
 			} else {
 				setShadow(false);
+				setNavBg('transparent');
 			}
 		};
 		window.addEventListener('scroll', handleShadow);
 	}, []);
 
 	return (
+		// main nav
 		<div
 			style={{ backgroundColor: `${navBg}` }}
 			className={
@@ -52,7 +55,7 @@ const Navbar = () => {
 					? 'fixed z-[100] h-20 w-full shadow-lg'
 					: 'fixed z-[100] h-20 w-full'
 			}>
-			<div className='flex items-center justify-between w-full h-full px-2 2xl:px-16'>
+			<div className='flex items-center justify-between w-full h-full px-2 2xl:px-16 '>
 				<h1 className='text-xl lg:text-2xl'>
 					<Link href='/'>
 						<a>King Tax Accounting Services</a>
@@ -75,7 +78,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-
+			{/* Mobile nav  */}
 			<div
 				onClick={() => setNav(false)}
 				className={
@@ -84,7 +87,7 @@ const Navbar = () => {
 				<div
 					className={
 						nav
-							? ' fixed left-0 top-0 h-screen w-[75%] bg-[#ecf0f3] p-10 duration-500 ease-in sm:w-[60%] md:w-[45%]'
+							? ' fixed left-0 top-0 h-screen w-[75%] bg-[#ecf1f3] p-10 duration-500 ease-in sm:w-[60%] md:w-[45%]'
 							: 'fixed left-[-100%] top-0 p-10 duration-500 ease-in'
 					}>
 					<div>

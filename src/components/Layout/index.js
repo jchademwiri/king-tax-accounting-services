@@ -2,8 +2,6 @@ import Navbar from '../Navbar';
 import Footer from '../Footer';
 import Head from 'next/head';
 
-import { motion } from 'framer-motion';
-
 const Layout = ({ children }) => {
 	return (
 		<>

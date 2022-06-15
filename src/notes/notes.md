@@ -35,7 +35,6 @@ Official Webesite: [www.kingtax.co.za](https:www.kingtax.co.za)
 
     1. singe service
 
-### NPO
 
 ## Services
 
