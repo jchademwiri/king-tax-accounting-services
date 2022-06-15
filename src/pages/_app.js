@@ -10,7 +10,7 @@ Router.events.on('routeChangeComplete', nProgress.done);
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<Layout>
+		<Layout className='bg-body'>
 			<Component {...pageProps} />
 		</Layout>
 	);
