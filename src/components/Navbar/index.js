@@ -79,7 +79,7 @@ const Navbar = () => {
 					<div
 						className={
 							nav
-								? ' fixed left-0 top-0 h-screen w-[70%] bg-body p-10 duration-500 ease-in'
+								? ' fixed left-0 top-0 h-screen bg-body p-10 duration-500 ease-in md:w-[70%]'
 								: 'fixed left-[-150%] top-0 p-10 duration-500 ease-in'
 						}>
 						<div>
@@ -91,12 +91,12 @@ const Navbar = () => {
 								</h1>
 								<div
 									onClick={handleNav}
-									className='p-3 rounded-full shadow-md cursor-pointer bg-theme/20 '>
+									className='p-3 m-3 rounded-full shadow-md cursor-pointer bg-theme/20 '>
 									<AiOutlineClose />
 								</div>
 							</div>
 							<div className='my-4 border-b border-accent'>
-								<p className='w-[85%] py-4 md:w-[90%]'>
+								<p className='py-4 '>
 									We Provide you the very best accounting services.
 								</p>
 							</div>
@@ -115,7 +115,7 @@ const Navbar = () => {
 								))}
 							</ul>
 							<div className='pt-40'>
-								<p className='tracking-widest uppercase text-accent'>
+								<p className='tracking-widest uppercase text-selected'>
 									Let&apos;s Connect
 								</p>
 
@@ -126,7 +126,7 @@ const Navbar = () => {
 											target='_blank'
 											rel='noreferrer'
 											key={index}
-											className='p-4 duration-300 ease-in rounded-full bg-theme/10 hover:scale-110 sm:p-6'>
+											className='p-4 duration-300 ease-in rounded-full bg-theme/20 hover:scale-110 sm:p-6'>
 											{icon.icon}
 										</a>
 									))}
