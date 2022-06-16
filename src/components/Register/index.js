@@ -14,8 +14,10 @@ const Register = () => {
 				<div className='grid grid-cols-1 gap-4 my-8 sm:grid-cols-2 lg:grid-cols-4'>
 					{steps &&
 						steps.map((step, index) => (
-							<div className='p-5 rounded-md service-box bg-theme/5'>
-								<div key={index}>
+							<div
+								key={index}
+								className='p-5 rounded-md service-box bg-theme/5'>
+								<div>
 									<div>
 										<Image
 											src={step.icon}
@@ -35,6 +37,7 @@ const Register = () => {
 											<a
 												href={step.link}
 												target='_blank'
+												rel='noreferrer'
 												className='block p-2 font-semibold rounded bg-theme/70'>
 												{step.linkText && <>{step.linkText}</>}
 											</a>
