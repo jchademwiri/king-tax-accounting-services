@@ -37,18 +37,15 @@ html {
 	}
 
 	button {
-		@apply rounded-xl bg-gradient-to-r from-[#5651e5] to-[#709dff] uppercase text-white shadow-xl shadow-gray-400;
+		@apply w-2/4 rounded-sm bg-gradient-to-r from-[#5651e5] to-[#709dff] p-5 uppercase text-white shadow-xl;
 	}
 }
 
-.max-hight-screen {
-	height: 80vh;
-}
 .inner-box {
 	height: 20rem;
 }
 .box {
-	height: 40rem;
+	height: 85vh;
 }
 .box-shadow {
 	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
