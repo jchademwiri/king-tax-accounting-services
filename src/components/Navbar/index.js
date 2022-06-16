@@ -125,7 +125,7 @@ const Navbar = () => {
 								Let's Connect
 							</p>
 
-							<div className='my-4 flex w-full items-center justify-between border sm:w-[80%]'>
+							<div className='my-4 flex w-full items-center justify-between  sm:w-[80%]'>
 								{icons.map((icon, index) => (
 									<a
 										href={icon.link}
