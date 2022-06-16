@@ -16,25 +16,23 @@ const Navbar = () => {
 
 	useEffect(() => {
 		const handleShadow = () => {
-			if (window.scrollY >= 90) {
-				setShadow(true);
-				setNavBg('#ecf1f3');
-				setLinkColor('#000');
-			} else {
-				setShadow(false);
-				setNavBg('transparent');
-				setLinkColor('#fff');
-			}
-
 			// if (window.scrollY >= 90) {
 			// 	setShadow(true);
-			// 	setNavBg('#17171f');
-			// 	setLinkColor('#fff');
+			// 	setNavBg('#ecf1f3');
+			// 	setLinkColor('#000');
 			// } else {
 			// 	setShadow(false);
 			// 	setNavBg('transparent');
 			// 	setLinkColor('#fff');
 			// }
+
+			if (window.scrollY >= 90) {
+				setShadow(true);
+				setNavBg('#17171f');
+			} else {
+				setShadow(false);
+				setNavBg('transparent');
+			}
 		};
 		window.addEventListener('scroll', handleShadow);
 	}, []);
@@ -46,27 +44,25 @@ const Navbar = () => {
 			style={{ backgroundColor: `${navBg}` }}
 			className={
 				shadow
-					? 'fixed z-[100] h-20 w-full  shadow-lg'
+					? 'fixed z-[100] h-20 w-full  shadow-sm shadow-selected'
 					: 'fixed z-[100] h-20 w-full '
 			}>
 			<div className='mx-auto flex h-full w-11/12 items-center justify-between px-2 lg:max-w-[1240px] '>
 				<h1 className='text-xl lg:text-2xl'>
 					<Link href='/'>
-						<a style={{ color: `${linkColor}` }} className='text-white'>
+						<a style={{ color: `${linkColor}` }}>
 							King Tax Accounting Services
 						</a>
 					</Link>
 				</h1>
 				<div>
-					<ul
-						style={{ color: `${linkColor}` }}
-						className='hidden text-white md:flex'>
+					<ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
 						{links.map((link, index) => (
 							<li
 								key={index}
 								className='ml-10 text-sm font-semibold uppercase '>
 								<Link href={link.link}>
-									<a className='pb-2 border-sky-500 hover:border-b-2'>
+									<a className='pb-2 border-theme hover:border-b-2 '>
 										{link.name}
 									</a>
 								</Link>
@@ -85,12 +81,12 @@ const Navbar = () => {
 			<div
 				onClick={() => setNav(false)}
 				className={
-					nav ? 'fixed left-0 top-0 h-screen w-full bg-black/70 md:hidden' : ''
+					nav ? 'fixed left-0 top-0 h-screen w-full bg-body/70 md:hidden' : ''
 				}>
 				<div
 					className={
 						nav
-							? ' fixed left-0 top-0 h-screen w-[75%] bg-[#ecf1f3] p-10 duration-500 ease-in sm:w-[60%] md:w-[45%]'
+							? ' fixed left-0 top-0 h-screen w-[75%] bg-body p-10 duration-500 ease-in sm:w-[60%] md:w-[45%]'
 							: 'fixed left-[-100%] top-0 p-10 duration-500 ease-in'
 					}>
 					<div>
@@ -102,13 +98,13 @@ const Navbar = () => {
 							</h1>
 							<div
 								onClick={handleNav}
-								className='p-3 rounded-full shadow-lg cursor-pointer shadow-gray-400'>
+								className='p-3 rounded-full shadow-md cursor-pointer bg-theme/10 '>
 								<AiOutlineClose />
 							</div>
 						</div>
-						<div className='my-4 border-b border-gray-300'>
+						<div className='my-4 border-b border-accent'>
 							<p className='w-[85%] py-4 md:w-[90%]'>
-								Let's build something legendary together
+								We Provide you the very best accounting services.
 							</p>
 						</div>
 					</div>
@@ -126,7 +122,7 @@ const Navbar = () => {
 							))}
 						</ul>
 						<div className='pt-40'>
-							<p className='uppercase tracking-widest text-[#5651e5]'>
+							<p className='tracking-widest uppercase text-accent'>
 								Let's Connect
 							</p>
 
@@ -136,7 +132,7 @@ const Navbar = () => {
 										href={icon.link}
 										target='_blank'
 										key={index}
-										className='p-4 duration-300 ease-in rounded-full shadow-md cursor-pointer shadow-gray-400 hover:scale-110'>
+										className='p-4 duration-300 ease-in rounded-full shadow-md cursor-pointer bg-theme/10 hover:scale-110'>
 										{icon.icon}
 									</a>
 								))}

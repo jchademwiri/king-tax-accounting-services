@@ -10,12 +10,13 @@
 
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 60px;
 }
 
 @layer base {
 	body {
-		@apply bg-[#ecf0f3] tracking-wide text-[#1f2937];
-		// @apply bg-[#17171f] tracking-wide text-[#fff];
+		// @apply bg-[#ecf0f3] tracking-wide text-[#1f2937];
+		@apply bg-body tracking-wide text-white;
 	}
 
 	h1,

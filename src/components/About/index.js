@@ -1,11 +1,11 @@
-const Contact = () => {
+const About = () => {
 	return (
-		<section id='contact'>
+		<section id='about'>
 			<div className=' mx-auto  grid  w-full  max-w-[1240px] '>
-				<h1>Contact</h1>
+				<h1>About</h1>
 			</div>
 		</section>
 	);
 };
 
-export default Contact;
+export default About;
