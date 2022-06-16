@@ -4,19 +4,19 @@ import { steps } from './data';
 const Register = () => {
 	return (
 		<section>
-			<div className='mx-auto grid w-full  max-w-[1240px] p-8  '>
+			<div className='mx-auto my-8 grid w-11/12 max-w-[1240px]  '>
 				<div className='mb-4 text-center '>
 					<h2>How to register a company</h2>
 					<p className='p-2 text-accent'>
 						All you need is your ID document. No paperwork required.
 					</p>
 				</div>
-				<div className='grid grid-cols-1 gap-4 my-8 sm:grid-cols-2 lg:grid-cols-4'>
+				<div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4'>
 					{steps &&
 						steps.map((step, index) => (
 							<div
 								key={index}
-								className='p-5 rounded-md service-box bg-theme/5'>
+								className='p-4 rounded-md service-box bg-theme/5'>
 								<div>
 									<div>
 										<Image

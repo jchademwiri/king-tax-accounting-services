@@ -29,7 +29,7 @@ html {
 	}
 
 	h1 {
-		@apply m-0 p-0 text-4xl sm:text-5xl md:text-6xl;
+		@apply m-0 p-0 text-4xl sm:text-5xl;
 	}
 
 	h2 {
@@ -45,7 +45,7 @@ html {
 	height: 20rem;
 }
 .box {
-	height: 85vh;
+	height: 80vh;
 }
 .box-shadow {
 	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
