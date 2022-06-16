@@ -2,31 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-
-import { useRouter } from 'next/router';
 import { links, icons } from './data';
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
 	const [shadow, setShadow] = useState(false);
-	const [navBg, setNavBg] = useState('#ecf0f3');
-	const [linkColor, setLinkColor] = useState('#1f2937');
-	const router = useRouter();
-
-	// useEffect(() => {
-	// 	if (
-	// 		router.asPath === '/property' ||
-	// 		router.asPath === '/crypto' ||
-	// 		router.asPath === '/netflix' ||
-	// 		router.asPath === '/twitch'
-	// 	) {
-	// 		setNavBg('transparent');
-	// 		setLinkColor('#ecf0f3');
-	// 	} else {
-	// 		setNavBg('#ecf0f3');
-	// 		setLinkColor('#1f2937');
-	// 	}
-	// }, [router]);
+	const [navBg, setNavBg] = useState('transparent');
+	const [linkColor, setLinkColor] = useState(false);
 
 	const handleNav = () => {
 		setNav(!nav);
@@ -37,43 +19,64 @@ const Navbar = () => {
 			if (window.scrollY >= 90) {
 				setShadow(true);
 				setNavBg('#ecf1f3');
-				setLinkColor(true);
+				setLinkColor('#000');
 			} else {
 				setShadow(false);
 				setNavBg('transparent');
+				setLinkColor('#fff');
 			}
+
+			// if (window.scrollY >= 90) {
+			// 	setShadow(true);
+			// 	setNavBg('#17171f');
+			// 	setLinkColor('#fff');
+			// } else {
+			// 	setShadow(false);
+			// 	setNavBg('transparent');
+			// 	setLinkColor('#fff');
+			// }
 		};
 		window.addEventListener('scroll', handleShadow);
 	}, []);
 
 	return (
 		// main nav
-		<div
+
+		<nav
 			style={{ backgroundColor: `${navBg}` }}
 			className={
 				shadow
-					? 'fixed z-[100] h-20 w-full shadow-lg'
-					: 'fixed z-[100] h-20 w-full'
+					? 'fixed z-[100] h-20 w-full  shadow-lg'
+					: 'fixed z-[100] h-20 w-full '
 			}>
-			<div className='flex items-center justify-between w-full h-full px-2 2xl:px-16 '>
+			<div className='mx-auto flex h-full w-11/12 items-center justify-between px-2 lg:max-w-[1240px] '>
 				<h1 className='text-xl lg:text-2xl'>
 					<Link href='/'>
-						<a>King Tax Accounting Services</a>
+						<a style={{ color: `${linkColor}` }} className='text-white'>
+							King Tax Accounting Services
+						</a>
 					</Link>
 				</h1>
 				<div>
-					<ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
+					<ul
+						style={{ color: `${linkColor}` }}
+						className='hidden text-white md:flex'>
 						{links.map((link, index) => (
 							<li
 								key={index}
-								className='ml-10 text-sm font-semibold uppercase hover:border-b'>
+								className='ml-10 text-sm font-semibold uppercase '>
 								<Link href={link.link}>
-									<a>{link.name}</a>
+									<a className='pb-2 border-sky-500 hover:border-b-2'>
+										{link.name}
+									</a>
 								</Link>
 							</li>
 						))}
 					</ul>
-					<div onClick={handleNav} className='md:hidden'>
+					<div
+						style={{ color: `${linkColor}` }}
+						onClick={handleNav}
+						className='md:hidden'>
 						<AiOutlineMenu size={25} />
 					</div>
 				</div>
@@ -129,22 +132,20 @@ const Navbar = () => {
 
 							<div className='my-4 flex w-full items-center justify-between sm:w-[80%]'>
 								{icons.map((icon, index) => (
-									<div
+									<a
+										href={icon.link}
+										target='_blank'
 										key={index}
-										className='flex items-center justify-center w-16 h-16 sm:h-20 sm:w-20'>
-										<div className='p-3 duration-300 ease-in rounded-full shadow-md cursor-pointer shadow-gray-400 hover:scale-105'>
-											<a href={icon.link} target='_blank'>
-												{icon.icon}
-											</a>
-										</div>
-									</div>
+										className='p-4 duration-300 ease-in rounded-full shadow-md cursor-pointer shadow-gray-400 hover:scale-110'>
+										{icon.icon}
+									</a>
 								))}
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</nav>
 	);
 };
 

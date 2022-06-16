@@ -1,48 +1,45 @@
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { BsFillTelephoneFill } from 'react-icons/bs';
 export const links = [
 	{
 		name: 'Home',
-		link: '/',
+		link: '/#home',
+	},
+	{
+		name: 'Services',
+		link: '/#services',
 	},
 	{
 		name: 'About',
-		link: '/about',
+		link: '/#about',
 	},
-	{
-		name: 'Skills',
-		link: '/skills',
-	},
-	{
-		name: 'Projects',
-		link: '/projects',
-	},
+
 	{
 		name: 'Contact',
-		link: '/contact',
+		link: '/#contact',
 	},
 ];
 
 export const icons = [
 	{
 		name: 'LinkedIn',
-		link: 'https://www.linkedin.com/in/james-king-tax-accounting-services-llc/',
+		link: 'https://www.linkedin.com/in/jchademwiri/',
 		icon: <FaLinkedinIn />,
 	},
 	{
 		name: 'Github',
-		link: 'https://www.linkedin.com/in/james-king-tax-accounting-services-llc/',
+		link: 'https://www.github.com/jchademwiri/',
 		icon: <FaGithub />,
 	},
 	{
 		name: 'Email',
-		link: 'https://www.linkedin.com/in/james-king-tax-accounting-services-llc/',
+		link: 'mailto:info@playhousemedia.net',
 		icon: <AiOutlineMail />,
 	},
 	{
 		name: 'Phone',
-		link: 'https://www.linkedin.com/in/james-king-tax-accounting-services-llc/',
-		icon: <BsFillPersonLinesFill />,
+		link: 'tel:+27740491433',
+		icon: <BsFillTelephoneFill />,
 	},
 ];

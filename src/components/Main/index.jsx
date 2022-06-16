@@ -5,7 +5,7 @@ import { icons } from '../Navbar/data';
 
 const Main = () => {
 	return (
-		<div id='home' className='w-full h-screen text-center'>
+		<div id='services' className='w-full h-screen text-center'>
 			<div className='mx-auto flex h-full w-full max-w-[1240px] items-center justify-center p-2'>
 				<div>
 					<p className='text-sm tracking-widest text-gray-600 uppercase'>
@@ -23,11 +23,13 @@ const Main = () => {
 					</p>
 					<div className='m-auto flex max-w-[330px] items-center justify-between py-4'>
 						{icons.map((icon, index) => (
-							<div
+							<a
+								href={icon.link}
+								target='_blank'
 								key={index}
 								className='p-6 duration-300 ease-in rounded-full shadow-md cursor-pointer shadow-gray-400 hover:scale-110'>
 								{icon.icon}
-							</div>
+							</a>
 						))}
 					</div>
 				</div>
