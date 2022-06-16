@@ -130,7 +130,7 @@ const Navbar = () => {
 									<a
 										href={icon.link}
 										target='_blank'
-										rel='noopener'
+										rel='noreferrer'
 										key={index}
 										className='p-4 duration-300 ease-in rounded-full bg-theme/10 hover:scale-110 sm:p-6'>
 										{icon.icon}
