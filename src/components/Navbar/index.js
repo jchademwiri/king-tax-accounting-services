@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
@@ -86,8 +85,8 @@ const Navbar = () => {
 				<div
 					className={
 						nav
-							? ' fixed left-0 top-0 h-screen w-[75%] bg-body p-10 duration-500 ease-in sm:w-[60%] md:w-[45%]'
-							: 'fixed left-[-100%] top-0 p-10 duration-500 ease-in'
+							? ' fixed left-0 top-0 h-screen w-[70%] bg-body p-10 duration-500 ease-in'
+							: 'fixed left-[-150%] top-0 p-10 duration-500 ease-in'
 					}>
 					<div>
 						<div className='flex items-center justify-between w-full'>
@@ -98,7 +97,7 @@ const Navbar = () => {
 							</h1>
 							<div
 								onClick={handleNav}
-								className='p-3 rounded-full shadow-md cursor-pointer bg-theme/10 '>
+								className='p-3 rounded-full shadow-md cursor-pointer bg-theme/20 '>
 								<AiOutlineClose />
 							</div>
 						</div>
@@ -126,13 +125,13 @@ const Navbar = () => {
 								Let's Connect
 							</p>
 
-							<div className='my-4 flex w-full items-center justify-between sm:w-[80%]'>
+							<div className='my-4 flex w-full items-center justify-between border sm:w-[80%]'>
 								{icons.map((icon, index) => (
 									<a
 										href={icon.link}
 										target='_blank'
 										key={index}
-										className='p-4 duration-300 ease-in rounded-full shadow-md cursor-pointer bg-theme/10 hover:scale-110'>
+										className='p-4 duration-300 ease-in rounded-full bg-theme/10 hover:scale-110 sm:p-6'>
 										{icon.icon}
 									</a>
 								))}
