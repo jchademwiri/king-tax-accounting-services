@@ -3,14 +3,18 @@ import Services from '../components/Services';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Register from '../components/Register';
-import Cta from '../CTA';
+import CTA from '../components/CTA';
 
 export default function Home() {
+	const desc =
+		'Join thousands of entrepreneurs who trust us to start an official company';
+	const text = 'Start Registration';
+	const link = 'https://wa.me/message/AQCSRA3QZVK7G1';
 	return (
 		<>
 			<Hero />
 			<Register />
-			<Cta />
+			<CTA CTAText={text} CTADescription={desc} link={link} />
 			<Services />
 			<About />
 			<Contact />
