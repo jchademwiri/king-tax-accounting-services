@@ -16,7 +16,7 @@ const Register = () => {
 						steps.map((step, index) => (
 							<div
 								key={index}
-								className='p-4 rounded-md service-box bg-theme/5'>
+								className='service-box rounded-md bg-primary/5 p-4'>
 								<div>
 									<div>
 										<Image
@@ -27,18 +27,20 @@ const Register = () => {
 										/>
 									</div>
 									<div className='box-title'>
-										<h3 className='uppercase text-selected/80'>{step.title}</h3>
+										<h3 className='uppercase text-secondary/80'>
+											{step.title}
+										</h3>
 									</div>
-									<div className='box-content my-6'>
+									<div className='my-6 box-content'>
 										<p>{step.description}</p>
 									</div>
 									{step.link && (
-										<div className='py-2 my-2 text-center box-footer'>
+										<div className='box-footer my-2 py-2 text-center'>
 											<a
 												href={step.link}
 												target='_blank'
 												rel='noreferrer'
-												className='block p-2 font-semibold rounded bg-theme/70'>
+												className='block rounded bg-primary/70 p-2 font-semibold'>
 												{step.linkText && <>{step.linkText}</>}
 											</a>
 										</div>

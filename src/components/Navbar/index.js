@@ -32,7 +32,7 @@ const Navbar = () => {
 				style={{ backgroundColor: `${navBg}` }}
 				className={
 					shadow
-						? 'fixed top-0 z-[100] h-20 w-full   shadow-sm shadow-selected'
+						? 'fixed top-0 z-[100] h-20 w-full   shadow-sm shadow-primary/80'
 						: 'fixed top-0 z-[100] h-20 w-full bg-transparent'
 				}>
 				<div className='mx-auto flex h-full w-11/12 items-center justify-between px-2 lg:max-w-[1240px] '>
@@ -48,7 +48,7 @@ const Navbar = () => {
 									key={index}
 									className='ml-10 text-sm font-semibold uppercase '>
 									<Link href={link.link}>
-										<a className='pb-2 border-theme hover:border-b-2 '>
+										<a className='pb-2 border-primary hover:border-b-2 '>
 											{link.name}
 										</a>
 									</Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
 				</div>
 				{/* Mobile nav  */}
 				<div
-					onClick={() => setNav(false)}
+					// onClick={() => setNav(false)}
 					className={
 						nav ? 'fixed left-0 top-0 h-screen w-full bg-body/70 md:hidden' : ''
 					}>
@@ -91,7 +91,7 @@ const Navbar = () => {
 								</h1>
 								<div
 									onClick={handleNav}
-									className='p-3 m-3 rounded-full shadow-md cursor-pointer bg-theme/20 '>
+									className='p-3 m-3 rounded-full shadow-md cursor-pointer bg-primary/50 '>
 									<AiOutlineClose />
 								</div>
 							</div>
@@ -115,7 +115,7 @@ const Navbar = () => {
 								))}
 							</ul>
 							<div className='pt-40'>
-								<p className='tracking-widest uppercase text-selected'>
+								<p className='tracking-widest uppercase text-accent'>
 									Let&apos;s Connect
 								</p>
 
@@ -126,7 +126,7 @@ const Navbar = () => {
 											target='_blank'
 											rel='noreferrer'
 											key={index}
-											className='p-4 duration-300 ease-in rounded-full bg-theme/20 hover:scale-110 sm:p-6'>
+											className='p-4 duration-300 ease-in rounded-full bg-primary/50 hover:scale-110 sm:p-6'>
 											{icon.icon}
 										</a>
 									))}
