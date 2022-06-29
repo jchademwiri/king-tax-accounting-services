@@ -63,9 +63,9 @@ Official Webesite: [www.kingtax.co.za](https:www.kingtax.co.za)
     Deregister Or Re-Instate Your Company
     Co-Op Registration
     Trademark Registration
+    POPI Compliance Certificate
 
 ## Other:
 
-    POPI Compliance Certificate
     Website Development
     Website Hosting

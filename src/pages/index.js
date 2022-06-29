@@ -10,6 +10,7 @@ export default function Home() {
 		'Join thousands of entrepreneurs who trust us to start an official company';
 	const text = 'Start Registration';
 	const link = 'https://wa.me/message/AQCSRA3QZVK7G1';
+
 	return (
 		<>
 			<Hero />

@@ -3,8 +3,8 @@ import { steps } from './data';
 
 const Register = () => {
 	return (
-		<section>
-			<div className='mx-auto my-8 grid w-11/12 max-w-[1240px]  '>
+		<section className='w-full py-4 my-4 '>
+			<div className='mx-auto   grid w-11/12 max-w-[1240px]  '>
 				<div className='mb-4 text-center '>
 					<h2>How to register a company</h2>
 					<p className='p-2 text-accent'>
@@ -16,7 +16,7 @@ const Register = () => {
 						steps.map((step, index) => (
 							<div
 								key={index}
-								className='service-box rounded-md bg-primary/5 p-4'>
+								className='p-4 rounded-md service-box bg-primary/5'>
 								<div>
 									<div>
 										<Image
@@ -31,16 +31,16 @@ const Register = () => {
 											{step.title}
 										</h3>
 									</div>
-									<div className='my-6 box-content'>
+									<div className='box-content my-6'>
 										<p>{step.description}</p>
 									</div>
 									{step.link && (
-										<div className='box-footer my-2 py-2 text-center'>
+										<div className='py-2 my-2 text-center box-footer'>
 											<a
 												href={step.link}
 												target='_blank'
 												rel='noreferrer'
-												className='block rounded bg-primary/70 p-2 font-semibold'>
+												className='block p-2 font-semibold rounded bg-primary/70'>
 												{step.linkText && <>{step.linkText}</>}
 											</a>
 										</div>

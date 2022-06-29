@@ -10,7 +10,7 @@
 
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 60px;
+	scroll-padding-top: 70px;
 }
 
 @layer base {
@@ -33,7 +33,7 @@ html {
 	}
 
 	h2 {
-		@apply text-3xl sm:text-4xl;
+		@apply lg:text-4xl text-2xl;
 	}
 
 	button {
@@ -49,4 +49,7 @@ html {
 }
 .box-shadow {
 	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+.testbox {
+	color: hsla(240, 100%, 62%, 0.051);
 }

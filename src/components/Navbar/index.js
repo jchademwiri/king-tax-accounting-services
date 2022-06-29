@@ -55,7 +55,7 @@ const Navbar = () => {
 								</li>
 							))}
 						</ul>
-						<div onClick={handleNav} className='md:hidden'>
+						<div onClick={handleNav} className='cursor-pointer md:hidden'>
 							<svg
 								width='26'
 								height='18'
