@@ -38,7 +38,10 @@ const Navbar = () => {
 				<div className='mx-auto flex h-full w-11/12 items-center justify-between px-2 lg:max-w-[1240px] '>
 					<h1 className='text-xl lg:text-2xl'>
 						<Link href='/'>
-							<a>King Tax Accounting Services</a>
+							<a>
+								King Tax <span className='text-accent'>Accounting</span>{' '}
+								Services
+							</a>
 						</Link>
 					</h1>
 					<div>
@@ -86,7 +89,10 @@ const Navbar = () => {
 							<div className='flex items-center justify-between w-full'>
 								<h1 className='text-base lg:text-2xl'>
 									<Link href='/'>
-										<a>King Tax Accounting Services</a>
+										<a>
+											King Tax <span className='text-accent'>Accounting</span>{' '}
+											Services
+										</a>
 									</Link>
 								</h1>
 								<div
