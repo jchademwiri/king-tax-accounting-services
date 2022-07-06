@@ -41,6 +41,12 @@ html {
 	}
 }
 
+@layer utilities {
+	.square {
+		aspect-ratio: 1/1;
+	}
+}
+
 .inner-box {
 	height: 20rem;
 }
