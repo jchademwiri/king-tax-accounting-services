@@ -6,7 +6,7 @@ export const consulting = [
 
 		description:
 			'Your website is the foundation of your online presence. We will work with you to design and develop a custom website that will meet your business goals and objectives.',
-		href: 'https://wa.me/+27740491433',
+		href: 'https://wa.me/+27727247569',
 		link: "Let's get started",
 	},
 	{
