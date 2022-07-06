@@ -10,12 +10,18 @@ export default function Home() {
 		'Join thousands of entrepreneurs who trust us to start an official company';
 	const text = 'Start Registration';
 	const link = 'https://wa.me/message/AQCSRA3QZVK7G1';
+	const textColor = '#FDA50F';
 
 	return (
 		<>
 			<Hero />
 			<Register />
-			<CTA CTAText={text} CTADescription={desc} link={link} />
+			<CTA
+				CTAText={text}
+				CTADescription={desc}
+				link={link}
+				textColor={textColor}
+			/>
 			<Services />
 			<About />
 			<Contact />

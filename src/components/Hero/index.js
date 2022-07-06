@@ -19,9 +19,9 @@ const Hero = () => {
 							Includes everything you need to start an official company.
 						</h3>
 
-						<div className='py-5 my-3'>
+						<div className=' hover:animate-bounce w-max '>
 							<a
-								className='p-4 px-6 font-semibold rounded bg-primary '
+								className='p-4 px-6 font-semibold rounded bg-primary animate-bounce '
 								href='mailto:info@kingtax.co.za'>
 								FREE CONSULTATION
 							</a>
