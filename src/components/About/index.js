@@ -3,9 +3,7 @@ const About = () => {
 		<section
 			id='about'
 			className='grid min-h-screen p-4 xs:my-8 xs:place-items-center xs:p-8'>
-			<h1 className='my-4 text-left'>
-				About <span className=' text-accent'>Us</span>
-			</h1>
+			<h1 className='my-4 text-left'>About Us</h1>
 			<div className='max-w-[1240px] w-11/12'>
 				<div className='grid gap-4 xs:grid-cols-2 md:grid-cols-4 '>
 					<h2 className='self-center text-2xl font-bold xs:col-span-2 xs:grid xs:grid-cols-2 xs:gap-4 md:col-span-3 md:text-5xl md:grid-cols-3'>
