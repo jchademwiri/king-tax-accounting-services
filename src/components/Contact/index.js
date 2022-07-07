@@ -9,16 +9,9 @@ import CTA from '../CTA';
 const Contact = () => {
 	const desc =
 		'Talk to an export now to get the help you need for your business needs.';
-<<<<<<< HEAD
-	const text = 'Call Us Now - +27 740 491 433';
-	const link = 'tel:+27740491433';
-	const bgcolor = 'hsla(240, 100%, 62%, 0.05)';
-
-=======
 	const text = 'Call Us Now - +27 72 724 7569';
 	const link = 'tel:+27727247569';
 	const color = 'hsla(240, 100%, 62%, 0.05)';
->>>>>>> dev
 	return (
 		<section id='contact'>
 			<div className='grid py-8 mx-auto '>
