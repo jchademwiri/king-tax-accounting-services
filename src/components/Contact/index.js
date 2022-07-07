@@ -15,12 +15,7 @@ const Contact = () => {
 	return (
 		<section id='contact'>
 			<div className='grid py-8 mx-auto '>
-				<CTA
-					CTAText={text}
-					CTADescription={desc}
-					bgcolor={bgcolor}
-					link={link}
-				/>
+				<CTA CTAText={text} CTADescription={desc} color={color} link={link} />
 			</div>
 			<div className='grid place-items-center max-w-[1240px] w-11/12  mx-auto xs:grid-cols-2 md:grid-cols-3 gap-4'>
 				<div className='grid w-full py-10 rounded place-items-center bg-primary/5 '>
