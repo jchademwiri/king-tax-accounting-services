@@ -9,8 +9,8 @@ const Hero = () => {
 				<div className='grid content-center w-full '>
 					<div>
 						<h3 className='py-2 text-xs uppercase'>Call us now</h3>
-						<a className='py-2 text-accent' href='tel:+27740491433'>
-							+27 740 491 433
+						<a className='py-2 text-accent' href='tel:+27727247569'>
+							+27 72 724 7569
 						</a>
 						<h1 className='py-2 leading-tight text-gray-200'>
 							Register your company today.

@@ -40,7 +40,7 @@ export const icons = [
 	},
 	{
 		name: 'Phone',
-		link: 'tel:+27740491433',
+		link: 'tel:+27727247569',
 		icon: <BsFillTelephoneFill />,
 	},
 ];
