@@ -26,11 +26,6 @@
 
 			a {
 				border-bottom: 2px solid $accent;
-
-				&:hover {
-					color: $accent;
-					border-bottom: 2px solid $primary;
-				}
 			}
 		}
 
@@ -67,7 +62,7 @@
 @media (min-width: 1200px) {
 	.container {
 		max-width: $containerMaxWidth;
-		width: 80%;
+
 		&__title {
 			h2 {
 				font-size: 2rem;

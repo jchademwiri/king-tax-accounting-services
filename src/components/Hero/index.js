@@ -1,5 +1,3 @@
-import { BsGear } from 'react-icons/bs';
-
 const Hero = () => {
 	return (
 		<section
@@ -19,7 +17,7 @@ const Hero = () => {
 						<h1 className='py-2 leading-tight text-gray-200'>
 							Register your company today.
 						</h1>
-						<h3 className='py-2 my-3 font-light '>
+						<h3 className='font-light mb-7 '>
 							Includes everything you need to start an official company.
 						</h3>
 
