@@ -3,7 +3,7 @@ export const steps = [
 		icon: '/icons/step-1.svg',
 		title: 'Step 1',
 		description: 'Complete your online application in a few minutes.',
-		link: 'https://wa.me/message/AQCSRA3QZVK7G1',
+		link: 'https://wa.me/message/GN3V7YGW4CIDO1',
 		linkText: 'Get Started',
 	},
 	{
