@@ -1,3 +1,4 @@
+import { DefaultSeo } from 'next-seo';
 import '../styles/globals.scss';
 import Layout from '../components/Layout';
 import Router from 'next/router';
@@ -29,6 +30,30 @@ function MyApp({ Component, pageProps }) {
             });
                 `}
 			</Script>
+			<DefaultSeo
+				titleTemplate='King Tax Accounting Services | %s'
+				title='Tax Returns and Accounting Services'
+				description={`King Tax Accounting is based in Centurion, Johannesburg. The company directors have more than 20 years combined experience. We provide  everything you need to start an official company.`}
+				openGraph={{
+					title: 'Tax Returns and Accounting Services',
+					description: `King Tax Accounting is based in Centurion, Johannesburg. The company directors have more than 20 years combined experience. We provide  everything you need to start an official company.`,
+					type: 'website',
+					locale: 'en_US',
+					site_name: 'King Tax Accounting Services',
+					images: [
+						{
+							url: `https://jacobc.co.za/social.jpg`,
+							width: 1200,
+							height: 600,
+							alt: 'Tax Returns and Accounting Services',
+						},
+					],
+				}}
+				twitter={{
+					site: '@jchademwiri',
+					cardType: 'summary_large_image',
+				}}
+			/>
 			<Component {...pageProps} />
 		</Layout>
 	);
