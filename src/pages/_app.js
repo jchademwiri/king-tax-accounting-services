@@ -34,7 +34,9 @@ function MyApp({ Component, pageProps }) {
 				titleTemplate='King Tax Accounting Services | %s'
 				title='Tax Returns and Accounting Services'
 				description={`King Tax Accounting is based in Centurion, Johannesburg. The company directors have more than 20 years combined experience. We provide  everything you need to start an official company.`}
+				canonical='https://www.kingtaxaccounting.co.za'
 				openGraph={{
+					url: 'https://www.kingtaxaccounting.co.za',
 					title: 'Tax Returns and Accounting Services',
 					description: `King Tax Accounting is based in Centurion, Johannesburg. The company directors have more than 20 years combined experience. We provide  everything you need to start an official company.`,
 					type: 'website',
@@ -42,7 +44,7 @@ function MyApp({ Component, pageProps }) {
 					site_name: 'King Tax Accounting Services',
 					images: [
 						{
-							url: `https://jacobc.co.za/social.jpg`,
+							url: `/king-tax-banner.jpg`,
 							width: 1200,
 							height: 600,
 							alt: 'Tax Returns and Accounting Services',
@@ -50,6 +52,7 @@ function MyApp({ Component, pageProps }) {
 					],
 				}}
 				twitter={{
+					handle: '@jchademwiri',
 					site: '@jchademwiri',
 					cardType: 'summary_large_image',
 				}}
