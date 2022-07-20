@@ -44,7 +44,7 @@ function MyApp({ Component, pageProps }) {
 					site_name: 'King Tax Accounting Services',
 					images: [
 						{
-							url: `https://www.kingtaxaccounting.co.za/king-tax-banner.jpg`,
+							url: `https://www.kingtaxaccounting.co.za/images/king-tax-banner.jpg`,
 							width: 1200,
 							height: 600,
 							alt: 'Tax Returns and Accounting Services',
